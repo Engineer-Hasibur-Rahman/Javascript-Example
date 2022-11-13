@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> JQuire sub multiplation and decrement</title>
+
+  <script type="text/javascript">
+  	
+  	// multiplation
+  	$(document).ready(function(){
+       // get value 
+  		$("#per_hour, #total_hour").keyup(function(){
+
+  		// inatial variable
+  		let total =0;
+  		let per_hour = Number($("#per_hour").val());
+  		let total_hour = Number($("#total_hour").val());
+  		let total= per_hour * total_hour;	
+
+  		// var total=x * y;	
+ 		
+ 		 $('#total').val(total);
+ 		      
+
+  		});
+  	});
+
+  
+
+  </script>
+</head>
+<body>
+
+	<table width="80%">
+		<tbody>
+			<thead>
+				<th>Per Hour Rate</th>
+				<th>total Hour </th>
+				<th> Toal Budge  </th>
+  			</thead>
+		</tbody>
+		<tr>
+			<td><input type="text" id="per_hour"></td>
+			<td><input type="text" id="total_hour"></td>
+			<td><input type="text" id="total" disabled></td>
+		</tr>
+	</table>
+
+
+<script src="jquery-3.5.0.min.js"></script>
+</body>
+</html>
